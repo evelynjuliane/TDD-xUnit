@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "qdJEEg+YKm14Ms5/7Pcp7cyRJOzHXRUWANVXvJwXlUgz0IycBeb7vrJBXsiFjBmL2whOVxRZd6kQnjxbWfeVig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ejdh\\.nuget\\packages\\jetbrains.resharper.commandlinetools\\2020.1.3\\jetbrains.resharper.commandlinetools.2020.1.3.nupkg.sha512",
+    "C:\\Users\\ejdh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ejdh\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
