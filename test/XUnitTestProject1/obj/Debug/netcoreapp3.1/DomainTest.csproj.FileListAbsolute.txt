@@ -93,3 +93,5 @@ C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\obj\Debug\netcor
 C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\obj\Debug\netcoreapp3.1\DomainTest.dll
 C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\obj\Debug\netcoreapp3.1\DomainTest.pdb
 C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\obj\Debug\netcoreapp3.1\DomainTest.genruntimeconfig.cache
+C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\obj\Debug\netcoreapp3.1\DomainTest.csproj.CoreCompileInputs.cache
+C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcoreapp3.1\ExpectedObjects.dll
