@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "GpaGLbg3a6zxC+UUuq7tzkiK6KqMgabryMWwLTGATYNfPejQ+naiEa8PXbCvNn7XTq89JZEWui3HLCGd5Rz97g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\CursoTDDxUnit.Dominio\\CursoTDDxUnit.Dominio\\CursoTDDxUnit.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ejdh\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\ejdh\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

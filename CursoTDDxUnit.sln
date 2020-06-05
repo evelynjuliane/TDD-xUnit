@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoTDDxUnit.DominioTest", "test\CursoTDDxUnit.DominioTest\CursoTDDxUnit.DominioTest.csproj", "{F2E2FDA3-9A5B-458F-A5FE-ECDFF8FBFAFF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CursoTDDxUnit.Dominio", "src\CursoTDDxUnit.Dominio\CursoTDDxUnit.Dominio\CursoTDDxUnit.Dominio.csproj", "{785E8810-4459-4286-AB5C-E5DA00735880}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2E2FDA3-9A5B-458F-A5FE-ECDFF8FBFAFF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2E2FDA3-9A5B-458F-A5FE-ECDFF8FBFAFF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2E2FDA3-9A5B-458F-A5FE-ECDFF8FBFAFF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2E2FDA3-9A5B-458F-A5FE-ECDFF8FBFAFF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{785E8810-4459-4286-AB5C-E5DA00735880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785E8810-4459-4286-AB5C-E5DA00735880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785E8810-4459-4286-AB5C-E5DA00735880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785E8810-4459-4286-AB5C-E5DA00735880}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BA6D6377-31D3-4CC9-A34D-56BB1AC9CE43}
+	EndGlobalSection
+EndGlobal
