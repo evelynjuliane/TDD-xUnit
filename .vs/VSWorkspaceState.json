@@ -2,7 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\src",
-    "\\test"
+    "\\test",
+    "\\test\\XUnitTestProject1"
   ],
   "SelectedNode": "\\CursoTDDxUnit.sln",
   "PreviewInSolutionExplorer": false
