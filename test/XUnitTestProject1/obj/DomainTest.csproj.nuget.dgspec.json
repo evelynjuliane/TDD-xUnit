@@ -4,6 +4,67 @@
     "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\DomainTest.csproj": {}
   },
   "projects": {
+    "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\ejdh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ejdh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "JetBrains.ReSharper.CommandLineTools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2020.1.3, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\DomainTest.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -26,7 +87,11 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -38,6 +103,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Bogus": {
+              "target": "Package",
+              "version": "[29.0.2, )"
+            },
             "ExpectedObjects": {
               "target": "Package",
               "version": "[2.3.4, )"
@@ -45,6 +114,10 @@
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[16.5.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.14.1, )"
             },
             "coverlet.collector": {
               "target": "Package",

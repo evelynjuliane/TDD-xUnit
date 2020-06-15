@@ -1,13 +1,11 @@
-﻿using ExpectedObjects;
-using Microsoft.VisualStudio.TestPlatform.Common.Telemetry;
+﻿using Bogus;
+using Domain.Cursos;
+using DomainTest.Builders;
 using System;
-using System.Collections.Generic;
-using System.Net.Http.Headers;
-using System.Text;
 using Xunit;
 using Xunit.Abstractions;
 
-namespace DomainTest.Curso
+namespace DomainTest.Cursos
 {
     public class CursoTest
     {
@@ -16,15 +14,23 @@ namespace DomainTest.Curso
         private readonly double _cargaHoraria;
         private readonly PublicoAlvo _publicoAlvo;
         private readonly double _valor;
+
         public CursoTest(ITestOutputHelper output)
         {
             _output = output;
             _output.WriteLine("Construtor Executado");
+            var faker = new Faker();
 
-            _nome = "Microsoft Office";
-            _cargaHoraria = 80;
+            _nome = faker.Random.Word();
+            _cargaHoraria = faker.Random.Double(50, 1000);
             _publicoAlvo = PublicoAlvo.Estudante;
-            _valor = 950;
+            _valor = faker.Random.Double(100, 1000);
+
+            
+            _output.WriteLine($"Double: {faker.Random.Double(1, 100)}");
+            _output.WriteLine($"Comapany: {faker.Company.CompanyName()}");
+            _output.WriteLine($"Email: {faker.Person.Email}");
+
         }
         [Fact]
         public void DeveCriarCurso()
@@ -39,7 +45,10 @@ namespace DomainTest.Curso
             };
 
             //Action
-            var curso = new Curso(cursoEsperado.nome, cursoEsperado.cargaHoraria, cursoEsperado.publicoAlvo, cursoEsperado.valor);
+            var curso = new Curso(cursoEsperado.nome,
+                                  cursoEsperado.cargaHoraria,
+                                  cursoEsperado.publicoAlvo,
+                                  cursoEsperado.valor);
             //Assert
             Assert.Equal(cursoEsperado.nome, curso.Nome);
             Assert.Equal(cursoEsperado.cargaHoraria, curso.CargaHoraria);
@@ -51,8 +60,8 @@ namespace DomainTest.Curso
         [InlineData(null)]
         public void NaoDeveCursoTerUmNomeInvalido(string nomeInvalido)
         {
-            Assert.Throws<ArgumentException>(() => 
-                new Curso(nomeInvalido, _cargaHoraria, _publicoAlvo, _valor));
+            Assert.Throws<ArgumentException>(() =>
+                CursoBuilder.Novo().ComNome(nomeInvalido).Build());
         }
         [Theory]
         [InlineData(0)]
@@ -62,7 +71,7 @@ namespace DomainTest.Curso
         {
 
             Assert.Throws<ArgumentException>(() =>
-                new Curso(_nome, cargaHorariaInvalida, _publicoAlvo, _valor));
+                CursoBuilder.Novo().ComCaragaHoraria(cargaHorariaInvalida).Build());
 
         }
         [Theory]
@@ -73,42 +82,10 @@ namespace DomainTest.Curso
         {
 ;
             Assert.Throws<ArgumentException>(() =>
-                new Curso(_nome, _cargaHoraria, _publicoAlvo, valorInvalido));
+               CursoBuilder.Novo().ComValor(valorInvalido).Build());
         }
 
     }
-    public enum PublicoAlvo
-    {
-        Estudante, 
-        Universitário,
-        Empregado,
-        Empreendedor
-    }
-    public class Curso
-    {
-        public Curso(string nome, double cargaHoraria, PublicoAlvo publicoAlvo, double valor)
-        {
-            if (string.IsNullOrEmpty(nome))
-            {
-                throw new ArgumentException();
-            }
-            if(cargaHoraria < 1)
-            {
-                throw new ArgumentException();
-            }
-            if(valor < 1)
-            {
-                throw new ArgumentException();
-            }
-
-            this.Nome = nome;
-            this.CargaHoraria = cargaHoraria;
-            this.PublicoAlvo = publicoAlvo;
-            this.Valor = valor;
-        }
-        public string Nome { get; private set; }
-        public double CargaHoraria { get; private set; }
-        public PublicoAlvo PublicoAlvo { get; private set; }
-        public double Valor { get; private set; }
-    }
+   
+    
 }
