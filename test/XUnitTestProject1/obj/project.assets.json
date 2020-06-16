@@ -1832,6 +1832,19 @@
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
       },
+      "Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Data.dll": {}
+        }
+      },
       "Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -6210,6 +6223,11 @@
         "xunit.runner.visualstudio.nuspec"
       ]
     },
+    "Data/1.0.0": {
+      "type": "project",
+      "path": "../../Data/Data.csproj",
+      "msbuildProject": "../../Data/Data.csproj"
+    },
     "Domain/1.0.0": {
       "type": "project",
       "path": "../../src/Domain/Domain.csproj",
@@ -6219,6 +6237,7 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Bogus >= 29.0.2",
+      "Data >= 1.0.0",
       "Domain >= 1.0.0",
       "ExpectedObjects >= 2.3.4",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
@@ -6234,9 +6253,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\DomainTest.csproj",
-      "projectName": "DomainTest",
-      "projectPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\DomainTest.csproj",
+      "projectUniqueName": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\xUnitTest.csproj",
+      "projectName": "xUnitTest",
+      "projectPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\xUnitTest.csproj",
       "packagesPath": "C:\\Users\\ejdh\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\obj\\",
       "projectStyle": "PackageReference",
@@ -6254,6 +6273,9 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
+            "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\Data\\Data.csproj": {
+              "projectPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\Data\\Data.csproj"
+            },
             "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj": {
               "projectPath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\src\\Domain\\Domain.csproj"
             }

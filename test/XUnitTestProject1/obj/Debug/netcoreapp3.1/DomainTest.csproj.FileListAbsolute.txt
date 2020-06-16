@@ -100,3 +100,7 @@ C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcor
 C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcoreapp3.1\Castle.Core.dll
 C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcoreapp3.1\Moq.dll
 C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\obj\Debug\netcoreapp3.1\DomainTest.csproj.CoreCompileInputs.cache
+C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcoreapp3.1\Application.dll
+C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcoreapp3.1\Data.dll
+C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcoreapp3.1\Application.pdb
+C:\Users\ejdh\source\repos\CursoTDDxUnit\test\XUnitTestProject1\bin\Debug\netcoreapp3.1\Data.pdb

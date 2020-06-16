@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XJujnSO45c3JlLF3xIyztPEKggcJCZGiKR4ny/zZ9FmmC0JU1QASBKm8+1K1VRoUAz7lHkPJhrPH2zGbPBqDbw==",
+  "dgSpecHash": "p6oz8t6+Iy6C0FZmHcYczJzRCy3rYnFxaJxRwTKI3opv8zWWwwWxQiG4bL/gtLAmrzvyIp/FjLEza9qddjknJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\DomainTest.csproj",
+  "projectFilePath": "C:\\Users\\ejdh\\source\\repos\\CursoTDDxUnit\\test\\XUnitTestProject1\\xUnitTest.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ejdh\\.nuget\\packages\\bogus\\29.0.2\\bogus.29.0.2.nupkg.sha512",
     "C:\\Users\\ejdh\\.nuget\\packages\\castle.core\\4.4.0\\castle.core.4.4.0.nupkg.sha512",

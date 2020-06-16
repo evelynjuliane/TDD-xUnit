@@ -1,0 +1,12 @@
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\bin\Debug\netstandard2.0\Data.deps.json
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\bin\Debug\netstandard2.0\Data.dll
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\bin\Debug\netstandard2.0\Data.pdb
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\bin\Debug\netstandard2.0\Domain.dll
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\bin\Debug\netstandard2.0\Domain.pdb
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\obj\Debug\netstandard2.0\Data.csprojAssemblyReference.cache
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\obj\Debug\netstandard2.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\obj\Debug\netstandard2.0\Data.AssemblyInfoInputs.cache
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\obj\Debug\netstandard2.0\Data.AssemblyInfo.cs
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\obj\Debug\netstandard2.0\Data.csproj.CopyComplete
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\obj\Debug\netstandard2.0\Data.dll
+C:\Users\ejdh\source\repos\CursoTDDxUnit\Data\obj\Debug\netstandard2.0\Data.pdb

@@ -1,5 +1,8 @@
-﻿using Bogus;
+﻿using Application.DTO;
+using Bogus;
+using Data;
 using Domain.Cursos;
+using DomainTest.Builders;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -32,7 +35,7 @@ namespace DomainTest.Cursos
         public void DeveAdicionarCurso()
         {
             _armazenadorDeCurso.Armazenar(_cursoDTO);
-            
+            //Moq valida o Objeto
             _cursoRepositorioMock.Verify(x => x.Adicionar(
                 It.Is<Curso>(
                     c => c.Nome == _cursoDTO.Nome && 
@@ -50,37 +53,21 @@ namespace DomainTest.Cursos
 
             Assert.Throws<ArgumentException>(() => _armazenadorDeCurso.Armazenar(_cursoDTO));
         }
+        [Fact]
+        public void NaoDeveAdicionarCursoComMesmoNome()
+        {
+            //STUB = simula comportamento 
+            var cursoSalvo = CursoBuilder.Novo().ComNome(_cursoDTO.Nome).Build();
+            _cursoRepositorioMock.Setup(r => r.ObterPeloNome(_cursoDTO.Nome)).Returns(cursoSalvo);
+
+            Assert.Throws<ArgumentException>(() => _armazenadorDeCurso.Armazenar(_cursoDTO));
+        
+        }
     }
     
-    public interface ICursoRepositorio
-    {
-        public void Adicionar(Curso curso);
-    }
-    public class ArmazenadorDeCurso
-    {
-        public readonly ICursoRepositorio _cursoRepositorio;
-        public ArmazenadorDeCurso(ICursoRepositorio cursoRepositorio)
-        {
-            _cursoRepositorio = cursoRepositorio;
-        }
-        public void Armazenar(CursoDTO cursoDTO)
-        {
-            Enum.TryParse(typeof(PublicoAlvo), cursoDTO.PublicoAlvo, out var publicoAlvo);
-            if (publicoAlvo == null)
-                throw new ArgumentException("Publico Alvo Inválido");
+    
+    
 
-            var _curso = new Curso(cursoDTO.Nome, cursoDTO.CargaHoraria, (PublicoAlvo)publicoAlvo, cursoDTO.Valor);
-
-            _cursoRepositorio.Adicionar(_curso);
-        }
-    }
-
-    public class CursoDTO
-    {
-        public string Nome { get; set; }
-        public double CargaHoraria { get; set; }
-        public string PublicoAlvo { get; set; }
-        public double Valor { get; set; }
-    }
+    
     
 }
